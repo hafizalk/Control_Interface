@@ -1,0 +1,3 @@
+This flow is the second half of the Overall IoT-based Control Infrastructure to enable the Remote Tele-Operation of a Vehicle.
+The json flow hosted on a RaspberryPi (RPi) receives using an MQTT input node, the control data sent from the Operator Control Platform over an MQTT server hosted on AWS IoT thing. The flow then converts the data through the RPi GPIO into digital command signals  for an Arduino Due Microcontroller to receive and process in order to generate the control signals necessary to control the operation of the vehicle such as its movement and robot arms (Manipulators) through its internal subsystems.
+The flow utilizes standard node-red nodes available on installation.
